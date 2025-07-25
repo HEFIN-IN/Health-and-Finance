@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health & Finance Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login to Portal</h1>
+    <form id="loginForm">
+      <label>Username</label>
+      <input id="username" type="text" placeholder="Your name" required />
+
+      <label>Phone Number</label>
+      <input id="phone" type="tel" placeholder="Enter your phone number" required />
+
+      <button type="button" id="sendOtp">Send OTP</button>
+
+      <div id="otpSection" class="hidden">
+        <label>Enter OTP</label>
+        <input id="otp" type="text" maxlength="6" placeholder="123456" required />
+        <button type="button" id="verifyOtp">Verify OTP</button>
+      </div>
+
+      <button id="loginBtn" type="submit" disabled>Log In</button>
+    </form>
+
+    <div class="divider"><span>Or</span></div>
+
+    <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID"
+         data-callback="handleGoogleCredential">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

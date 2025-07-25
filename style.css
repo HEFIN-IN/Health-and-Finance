@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;       
+}
+.header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 13px;
+    z-index: 1000;
+    height: 72px;
+}
+.logoimg{
+    
+    width: 120px;
+    height: 60px;
+    margin-right: 70%;
+    margin-left: 10px;
+}
+.headlist{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: black;
+}
+.hd:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section1{
+    
+    height: 600px;
+    width: 100%; 
+    background-color:rgba(114, 218, 156, 0.411);
+    position: relative;
+}
+.img1{
+    position: absolute;
+    width: 50%;
+    height: 600px;
+    right: 0%;
+}
+.imgtag1{
+    position: absolute;
+    top: 20%;
+    color: bisque;
+    left: 5%;
+    font-size: 55px;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.imgtag2{
+    position: absolute;
+    top: 30%;
+    color: bisque;
+    left:5%;
+    font-size: 55px;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;   
+}
+.slogan{
+    position: absolute;
+    color: black;
+    left: 0;
+    bottom: 0;
+    font-family: "Suravaram", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.s1{
+    top: 45%;
+    left: 10%;
+    font-size: 25px;
+}
+.s2{
+    top: 50%;
+    left: 10%;
+    font-size: 25px;
+}
+.s3{
+    top: 55%;
+    left: 10%;
+    font-size: 25px;
+}
+.s4{
+    top: 60%;
+    left: 10%;
+    font-size: 25px;
+}
+ .bodyy {position: relative; right: 0; font-family:Arial, sans-serif; background-color:cornsilk; margin: 0; padding: 20px; display: flex; justify-content: center; height: 410px;}
+    .quote-card {
+      position: absolute;
+      background: #ecdcdc; padding: 24px; border-radius: 12px; width: 320px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      right: 10%;
+    }
+    .quote-card h2 { margin-top: 0; font-size: 1.2rem; }
+    .form-group { margin-bottom: 12px; position: relative; }
+    .form-group input {
+      width: 100%; padding: 12px 40px 12px 12px; font-size: 1rem;
+      border: 1px solid #ccc; border-radius: 6px;
+    }
+    .form-group input:invalid { border-color: #e74c3c; }
+    .form-group .error {
+      position: absolute; bottom: -18px; left: 0; color: #e74c3c; font-size: 0.85rem; display: none;
+    }
+    .form-group input:invalid + .error { display: block; }
+    .form-group .icon {
+      position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+      color: #888;
+    }
+    button {
+      width: 100%; padding: 12px; font-size: 1rem;
+      background: #ee724c; border: none; border-radius: 6px;
+      color: white; cursor: pointer;
+    }
+    button:disabled { background: #ccc; }
+    .disclaimer { font-size: 0.75rem; color: #555; margin-top: 8px; }
+.section2{
+    position: relative;
+    background-color:black;
+    width: 100%;
+}
+.section2tag{
+    position: absolute;
+    left:5%;
+    top: 60%;
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.logoimg2{
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    left: 5%;
+}
+.insurance{
+    position: absolute;
+    font-size: 60px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    left: 5%;
+    top: 40%;
+    color: blueviolet;
+}
