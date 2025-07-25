@@ -151,3 +151,77 @@
     top: 40%;
     color: blueviolet;
 }
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.services {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.services h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 10%;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+.icon {
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+  color: #fff;
+}
+
+.red { background: #ffe6e6; color: #d32f2f; }
+.purple { background: #f3e5f5; color: #8e24aa; }
+.blue { background: #e3f2fd; color: #1565c0; }
+.green { background: #e8f5e9; color: #2e7d32; }
+.pink { background: #fce4ec; color: #c2185b; }
+.blue2 { background: #ede7f6; color: #512da8; }
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
