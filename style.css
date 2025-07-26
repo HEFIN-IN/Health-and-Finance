@@ -523,3 +523,40 @@ hr {
 @media(max-width:700px){
   .footer-bottom { flex-direction: column; text-align: center; gap: 10px; }
 }
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  overflow: hidden;
+}
+.slider-container .slide {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slider-container .slide.active {
+  opacity: 1;
+}
+.slider-container img {
+  width: 100%;
+  height: 660px;
+  
+}
+.dots {
+  text-align: center;
+  margin-top: 8px;
+}
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #717171;
+}

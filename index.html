@@ -23,16 +23,18 @@
         <a><h4 class="headlist hd" style="padding: 5px;">Contact</h4></a>
         <h4 class="headlist" style="font-size: 20px;">|</h4>
         <a href="loginpage.html" style="text-decoration: none;"><h4 class="headlist hd" style="padding: 5px;">Login</h4></a>
-    </div><br>
-    <div class="section1">
-       
-        <h1 class="imgtag1">Your Health</h1>
-        <h1 class="imgtag2">Our Priority</h1>
-        <p class="slogan s1">Invest in wellness today, secure your wealth tomorrow  </p>
-        <p class="slogan s2">Coverage that cares, in trust you're secured. </p>   
-        <p class="slogan s3">More than a policy, your wellness in hand,  </p>   
-        <p class="slogan s4">Peace of mind today, a stronger tomorrow planned.</p>
-    </div>
+    </div><br><br><br>
+      <div class="slider-container">
+  <div class="slide active"><img src="image/slideimg1.png" alt="Slide 1"></div>
+  <div class="slide"><img src="image/slideimg2.jpg" alt="Slide 2"></div>
+  <div class="slide"><img src="image/slideimg3.jpg" alt="Slide 3"></div>
+</div>
+<div class="dots">
+  <span class="dot active" onclick="goToSlide(0)"></span>
+  <span class="dot" onclick="goToSlide(1)"></span>
+  <span class="dot" onclick="goToSlide(2)"></span>
+</div>
+
     <section class="services">
   <h2>Our Medical Services</h2>
   <p class="subtitle">
@@ -316,6 +318,36 @@
     <p>Made with <span class="heart">❤</span> for better health</p>
   </div>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll('.slider-container .slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+    let timer;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+      });
+    }
+
+    function goToSlide(n) {
+      clearInterval(timer);
+      current = n;
+      showSlide(current);
+      timer = setInterval(nextSlide, 4000);
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    showSlide(current);
+    timer = setInterval(nextSlide, 4000);
+  });
+</script>
 
 
 
