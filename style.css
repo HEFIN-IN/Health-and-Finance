@@ -34,7 +34,8 @@
     
     height: 600px;
     width: 100%; 
-    background-image: url("image/hefin img.jpg");
+    background-image: url("image/finanacial\ img2.jpg");
+    background-size: cover;
     position: relative;
     object-fit: cover;
 }
@@ -46,20 +47,20 @@
 }
 .imgtag1{
     position: absolute;
-    top: 20%;
+    top: 30%;
     color:brown;
     left: 5%;
-    font-size: 55px;
+    font-size: 75px;
     font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 .imgtag2{
     position: absolute;
-    top: 30%;
+    top: 40%;
     color:brown;
     left:5%;
-    font-size: 55px;
+    font-size: 75px;
     font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;   
@@ -75,22 +76,22 @@
 }
 .s1{
     top: 45%;
-    left: 10%;
+    left: 40%;
     font-size: 25px;
 }
 .s2{
     top: 50%;
-    left: 10%;
+    left: 40%;
     font-size: 25px;
 }
 .s3{
     top: 55%;
-    left: 10%;
+    left: 40%;
     font-size: 25px;
 }
 .s4{
     top: 60%;
-    left: 10%;
+    left: 40%;
     font-size: 25px;
 }
  .bodyy {position: relative; right: 0; font-family:Arial, sans-serif; background-color:cornsilk; margin: 0; padding: 20px; display: flex; justify-content: center; height: 410px;}
