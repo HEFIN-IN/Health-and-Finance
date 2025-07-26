@@ -34,7 +34,7 @@
     
     height: 600px;
     width: 100%; 
-    background-image: url("hefin\ img.jpg");
+    background-image: url("image/hefin img.jpg");
     position: relative;
     object-fit: cover;
 }
