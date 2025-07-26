@@ -13,9 +13,9 @@
     height: 72px;
 }
 .logoimg{
-    
+    margin-top: -10px;
     width: 120px;
-    height: 60px;
+    height: 65px;
     margin-right: 70%;
     margin-left: 10px;
 }
@@ -139,7 +139,7 @@
 .logoimg2{
     position: absolute;
     width: 20%;
-    height: 25%;
+    height: 30%;
     left: 5%;
 }
 .insurance{
