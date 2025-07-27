@@ -480,7 +480,7 @@ form button:hover {
 }
 
 .title {
-  position: absolute;
+  margin-top: 155px;
   font-size: 1.8rem;
   color: #8e44ad;
   margin-bottom: 0.75rem;
@@ -491,7 +491,7 @@ form button:hover {
 }
 
 .description {
-  margin-top: 240px;
+  margin-top: 0px;
   font-size: 1rem;
   color: #333;
   line-height: 1.3;
