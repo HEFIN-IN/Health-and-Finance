@@ -3,272 +3,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEFIN</title>
+    <title>HEFIN - Health & Finance</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Suravaram&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
 
 </head>
 <body>
-    <div class="header">
-        <img src="image/hefin logo1.jpg" class="logoimg" alt="logo">
-        <a><h4 class="headlist hd" style="padding: 5px;">About</h4></a>
-        <h4 class="headlist" style="font-size: 20px;">|</h4>
-        <a><h4 class="headlist hd" style="padding: 5px;">Contact</h4></a>
-        <h4 class="headlist" style="font-size: 20px;">|</h4>
-        <a href="loginpage.html" style="text-decoration: none;"><h4 class="headlist hd" style="padding: 5px;">Login</h4></a>
-    </div><br><br><br>
-      <div class="slider-container">
-  <div class="slide active"><img src="image/slideimg1.png" alt="Slide 1"></div>
-  <div class="slide"><img src="image/slideimg2.jpg" alt="Slide 2"></div>
-  <div class="slide"><img src="image/slideimg3.jpg" alt="Slide 3"></div>
-</div>
-<div class="dots">
-  <span class="dot active" onclick="goToSlide(0)"></span>
-  <span class="dot" onclick="goToSlide(1)"></span>
-  <span class="dot" onclick="goToSlide(2)"></span>
-</div>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="logo">HEFIN</div>
+        <nav class="nav" id="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="loginpage.html">Login</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
 
-    <section class="services">
-  <h2>Our Medical Services</h2>
-  <p class="subtitle">
-    We offer a comprehensive range of medical services with state-of-the-art equipment
-    and experienced healthcare professionals.
-  </p>
-  
-  <div class="services-container">
-    <div class="service-card ">
-      <div class="icon red"><i class="fas fa-heart"></i></div>
-      <h3>Cardiology</h3>
-      <p>Comprehensive heart care with advanced diagnostic tools and treatment options.</p>
+    <!-- Hero Section -->
+  <!-- Hero Section (Image Slider) -->
+<section class="hero" id="home">
+    <div class="slider">
+        <div class="slide active" style="background-image: url('finanacial\ img2.jpg');">
+            <div class="hero-content">
+                <h1 style="color:darkgoldenrod;">Your Health, Our Priority</h1>
+                <p style="color:chocolate; font-size: 25px;">Smart solutions for your health and financial wellbeing.</p>
+                <a href="#services" class="btn">Explore Services</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('img2.jpg');">
+            <div class="hero-content">
+                <h1>Secure Your Future</h1>
+                <p>Financial planning that works for you and your family.</p>
+                <a href="#services" class="btn">Get Started</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('img3.jpg');">
+            <div class="hero-content">
+                <h1>24/7 Expert Support</h1>
+                <p>Your health and finance, protected all the time.</p>
+                <a href="#services" class="btn">Contact Us</a>
+            </div>
+        </div>
     </div>
-    <div class="service-card ">
-      <div class="icon purple"><i class="fas fa-brain"></i></div>
-      <h3>Neurology</h3>
-      <p>Expert care for neurological conditions with cutting-edge treatment methods.</p>
-    </div>
-    <div class="service-card ">
-      <div class="icon blue"><i class="fas fa-bone"></i></div>
-      <h3>Orthopedics</h3>
-      <p>Specialized bone, joint, and muscle care for all ages and activity levels.</p>
-    </div>
-    <div class="service-card ">
-      <div class="icon green"><i class="fas fa-eye"></i></div>
-      <h3>Ophthalmology</h3>
-      <p>Complete eye care services from routine exams to complex surgeries.</p>
-    </div>
-    <div class="service-card ">
-      <div class="icon pink"><i class="fas fa-baby"></i></div>
-      <h3>Pediatrics</h3>
-      <p>Gentle, comprehensive healthcare for infants, children, and adolescents.</p>
-    </div>
-    <div class="service-card ">
-      <div class="icon blue2"><i class="fas fa-stethoscope"></i></div>
-      <h3>General Medicine</h3>
-      <p>Primary care services for overall health maintenance and disease prevention.</p>
-    </div>
-  </div>
 </section>
-  <section class="testimonials">
-  <h2>What Our Patients Say</h2>
-  <p class="subtitle">
-    Don't just take our word for it. Here's what our patients have to say about their experience.
-  </p>
 
-  <div class="testimonial-container">
-    <!-- Testimonial 1 -->
-    <div class="testimonial-card">
-      <div class="stars">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        <i class="fas fa-star"></i><i class="fas fa-star"></i>
-      </div>
-      <p class="feedback">
-        "The care I received was exceptional. Dr. Johnson and her team made me feel comfortable throughout my treatment."
-      </p>
-      <div class="patient">
-        <img src="image/monicaimg.jpg" alt="Monica">
-        <div>
-          <h4>Monica</h4>
-          <span>Verified Patient</span>
-        </div>
-      </div>
-    </div>
 
-    <!-- Testimonial 2 -->
-    <div class="testimonial-card">
-      <div class="stars">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            HEFIN brings health and finance together to give you the best life solutions.
+            From insurance to financial planning and healthcare, we are here for you.
+        </p>
+    </section>
+   
+<section class="why-choose">
+  <div class="container">
+    <div class="headerr">
+        <center>
+      <h2>Why Choose HEFIN?</h2>
+      <p>We believe that true wellness comes from balancing both physical health and financial security. Our platform provides the tools and knowledge you need for both.</p></center>
+    </div><br><br>
+    <div class="features">
+      <div class="feature-card">
+        <!-- Replace with SVG or FontAwesome icon -->
+        <div class="icon">❤️</div>
+        <h3>Health Tracking</h3>
+        <p>Monitor your wellness journey with science‑backed health insights and personalized recommendations.</p>
       </div>
-      <p class="feedback">
-        "Professional, caring, and thorough. The staff went above and beyond to ensure I understood my treatment plan."
-      </p>
-      <div class="patient">
-        <img src="image/abidemi kwame img.jpg" alt="abidemi kwame">
-        <div>
-          <h4>Abidemi Kwame</h4>
-          <span>Verified Patient</span>
-        </div>
+      <div class="feature-card">
+        <div class="icon">📈</div>
+        <h3>Financial Planning</h3>
+        <p>Build wealth with expert financial guidance and smart investment strategies tailored to your goals.</p>
       </div>
-    </div>
-
-    <!-- Testimonial 3 -->
-    <div class="testimonial-card">
-      <div class="stars">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+      <div class="feature-card">
+        <div class="icon">🎓</div>
+        <h3>Expert Content</h3>
+        <p>Access articles and guides from certified health professionals and financial advisors.</p>
       </div>
-      <p class="feedback">
-        "I've been a patient here for years. The quality of care and attention to detail is unmatched in our area."
-      </p>
-      <div class="patient">
-        <img src="image/nataliaimg.jpg" alt="natalia">
-        <div>
-          <h4>Natalia</h4>
-          <span>Verified Patient</span>
-        </div>
+      <div class="feature-card">
+        <div class="icon">👥</div>
+        <h3>Community</h3>
+        <p>Connect with like‑minded individuals on similar health and financial wellness journeys.</p>
       </div>
     </div>
   </div>
 </section>
- <div class="section2">
-    <div class="bodyy">
-         <img src="image/hefin logo1.jpg" alt="" class="logoimg2">
-         <h1 class="insurance">HEALTH INSURANCE</h1>
-        <h1 class="section2tag">A health chat application which offers <br> a personalized wellness in your life,It will <br>light up your life when the danger darkens.</h1>
-    <div class="quote-card">
-    <h2>Get Health Insurance Quote in 2 Steps</h2>
-    <form id="quoteForm" novalidate>
-      <div class="form-group">
-        <input type="text" id="name" placeholder="Name" required />
+
+
+
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>Health Insurance</h3>
+                <p>Comprehensive coverage for your health and wellbeing.</p>
+            </div>
+            <div class="service-card">
+                <h3>Financial Planning</h3>
+                <p>Secure your future with expert financial advice.</p>
+            </div>
+            <div class="service-card">
+                <h3>24/7 Support</h3>
+                <p>We're here whenever you need us, day or night.</p>
+            </div>
+        </div>
+    </section>
+  <section class="insurance-section">
+  <div class="insurance-content">
+    <img src="image/your-logo.png" alt="HEFIN Logo" class="insurance-logo">
+    <h2 class="title">HEALTH INSURANCE</h2>
+    <p class="description">
+      A health chat application which offers personalized wellness in your life.
+      It will light up your life when the danger darkens.
+    </p>
+  </div>
+
+  <div class="quote-form">
+    <h3>Get Health Insurance Quote in 2 Steps</h3>
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="Name" required>
         <span class="icon">👤</span>
-        <div class="error">This field is required</div>
       </div>
-      <div class="form-group">
-        <input type="tel" id="mobile" placeholder="Mobile Number" pattern="^\d{10}$" required />
+      <div class="input-group">
+        <input type="tel" placeholder="Mobile Number" required>
         <span class="icon">📞</span>
-        <div class="error">Enter a valid 10-digit mobile number</div>
       </div>
-      <div class="form-group">
-        <input type="text" id="pincode" placeholder="Pincode" pattern="^\d{6}$" required />
+      <div class="input-group">
+        <input type="text" placeholder="Pincode" required>
         <span class="icon">📍</span>
-        <div class="error">Enter a valid 6-digit pincode</div>
       </div>
-      <button type="submit" id="submitBtn">Get Quote →</button>
+      <button type="submit">Get Quote →</button>
     </form>
-    <div class="disclaimer">
-      By providing my details, I consent to receive assistance from Star Health regarding my purchases and services through any valid communication channel.
+    <small>
+      By providing my details, I consent to receive assistance regarding purchases and services through valid communication channels.
+    </small>
+  </div>
+</section>
+    <section class="financial-wellness">
+    <h2>Financial Wellness</h2>
+    <p>Build lasting financial security with expert guidance on budgeting, investing, and wealth building strategies.</p>
+    
+    <div class="smart-planning">
+        <div class="planning-text">
+            <h3>Smart Financial Planning</h3>
+            <ul>
+                <li><strong>Budget Optimization</strong> - Learn to maximize your income and minimize unnecessary expenses.</li>
+                <li><strong>Investment Strategies</strong> - Diversify your portfolio with evidence-based investment approaches.</li>
+                <li><strong>Risk Management</strong> - Protect your wealth with comprehensive insurance and emergency planning.</li>
+            </ul>
+        </div>
+        <div class="planning-image">
+            <img src="image/smartfinancial.avif" alt="Financial Planning">
+        </div>
     </div>
-    </div>
-    </div>
-    </div>
-<section class="doctors-section">
-  <h2>Meet Our Expert Doctors</h2>
-  <p class="subtitle">
-    Our team of experienced healthcare professionals is dedicated to providing you with
-    the highest quality medical care.
-  </p>
 
-  <div class="doctors-container">
-    <!-- Doctor 1 -->
-    <div class="doctor-card">
-      <img src="image/cardiologist doctor.jpg" alt="Dr. Sarah Johnson" class="doctor-img">
-      <h3>Dr. Sarah Johnson</h3>
-      <p class="specialty">Cardiologist</p>
-      <p class="experience">15 years experience</p>
-      <div class="tags">
-        <span>Heart Surgery</span>
-        <span>Preventive Cardiology</span>
+    <div class="cards">
+        <div class="card">
+            <img src="image/investmentfundamentalimg.avif" alt="Investment">
+            <h4>Investment Fundamentals</h4>
+            <p>Master the basics of investing and build long-term wealth through smart decisions.</p>
+            <button class="read-more" data-content="Investment helps you grow your wealth by allocating money into different assets such as stocks, bonds, and mutual funds. Understanding market trends and risk management is essential to avoid losses.">Read More →</button>
+        </div>
+
+        <div class="card">
+            <img src="image/budgetingmasteryimg.avif" alt="Budgeting">
+            <h4>Budgeting Mastery</h4>
+            <p>Create and stick to budgets that help you achieve your financial goals faster.</p>
+            <button class="read-more" data-content="Budgeting allows you to track expenses, save effectively, and avoid unnecessary spending. With proper planning, you can allocate funds for savings and investments.">Read More →</button>
+        </div>
+
+        <div class="card">
+            <img src="image/retirementplanningimg.avif" alt="Retirement">
+            <h4>Retirement Planning</h4>
+            <p>Secure your future with comprehensive retirement planning strategies.</p>
+            <button class="read-more" data-content="Retirement planning ensures you have enough funds for a comfortable life after you stop working. It includes pension schemes, investments, and savings plans tailored to your needs.">Read More →</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="services-section">
+  <div class="container">
+    <h2>Our Medical Services</h2>
+    <p class="subtitle">We offer a comprehensive range of medical services with state-of-the-art equipment and experienced healthcare professionals.</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon heart">❤️</div>
+        <h3>Cardiology</h3>
+        <p>Comprehensive heart care with advanced diagnostic tools and treatment options.</p>
       </div>
-    </div>
 
-    <!-- Doctor 2 -->
-    <div class="doctor-card">
-      <img src="image/neurologist doctor.jpg" alt="Dr. Michael Chen" class="doctor-img">
-      <h3>Dr. Michael Chen</h3>
-      <p class="specialty">Neurologist</p>
-      <p class="experience">12 years experience</p>
-      <div class="tags">
-        <span>Stroke Care</span>
-        <span>Epilepsy Treatment</span>
+      <div class="service-card">
+        <div class="icon brain">🧠</div>
+        <h3>Neurology</h3>
+        <p>Expert care for neurological conditions with cutting-edge treatment methods.</p>
       </div>
-    </div>
 
-    <!-- Doctor 3 -->
-    <div class="doctor-card">
-      <img src="image/pediatrician doctor.jpg" alt="Dr. Emily Rodriguez" class="doctor-img">
-      <h3>Dr. Emily Rodriguez</h3>
-      <p class="specialty">Pediatrician</p>
-      <p class="experience">10 years experience</p>
-      <div class="tags">
-        <span>Child Development</span>
-        <span>Immunizations</span>
+      <div class="service-card">
+        <div class="icon bone">🦴</div>
+        <h3>Orthopedics</h3>
+        <p>Specialized bone, joint, and muscle care for all ages and activity levels.</p>
       </div>
-    </div>
 
-    <!-- Doctor 4 -->
-    <div class="doctor-card">
-      <img src="image/Orthopedic Surgeon doctor.jpg" alt="Dr. David Wilson" class="doctor-img">
-      <h3>Dr. David Wilson</h3>
-      <p class="specialty">Orthopedic Surgeon</p>
-      <p class="experience">18 years experience</p>
-      <div class="tags">
-        <span>Joint Replacement</span>
-        <span>Sports Medicine</span>
+      <div class="service-card">
+        <div class="icon eye">👁️</div>
+        <h3>Ophthalmology</h3>
+        <p>Complete eye care services from routine exams to complex surgeries.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon baby">👶</div>
+        <h3>Pediatrics</h3>
+        <p>Gentle, comprehensive healthcare for infants, children, and adolescents.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon stethoscope">🩺</div>
+        <h3>General Medicine</h3>
+        <p>Primary care services for overall health maintenance and disease prevention.</p>
       </div>
     </div>
   </div>
 </section>
-<section class="contact-section">
-  <h2>Get In Touch</h2>
-  <p class="subtitle">
-    Ready to take the next step in your healthcare journey? Contact us today to schedule an appointment.
-  </p>
 
-  <div class="contact-wrapper">
-    <!-- Info Cards -->
-    <div class="info-cards">
-      <div class="card"><i class="icon">📍</i><div><h4>Address</h4><p>123 Health St, Medical City, MC 12345</p></div></div>
-      <div class="card"><i class="icon">📞</i><div><h4>Phone</h4><p>(555) 123-4567</p></div></div>
-      <div class="card"><i class="icon">✉️</i><div><h4>Email</h4><p>info@hefin.com</p></div></div>
-      <div class="card"><i class="icon">⏰</i><div><h4>Hours</h4><p>Mon–Fri: 8AM–6PM<br>Sat: 9AM–4PM</p></div></div>
-    </div><br>
 
-    <!-- Contact Form -->
-    <form id="contactForm" class="contact-form">
-      <h4>Send us a Message</h4>
-      <div class="form-group">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <span class="error" id="nameError"></span>
+<!-- dovtor section -->
+    <section class="doctors-section">
+    <h2 class="section-title">Meet Our Expert Doctors</h2>
+    <p class="section-subtitle">
+        Our team of experienced healthcare professionals is dedicated to providing you with the highest quality medical care.
+    </p>
+
+    <div class="doctors-container">
+        <div class="doctor-card">
+            <img src="image/cardiologist doctor.jpg" alt="Dr. Sarah Johnson">
+            <h3>Dr. Sarah Johnson</h3>
+            <p class="specialty">Cardiologist</p>
+            <p class="experience">15 years experience</p>
+            <div class="tags">
+                <span>Heart Surgery</span>
+                <span>Preventive Cardiology</span>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="image/neurologist doctor.jpg" alt="Dr. Michael Chen">
+            <h3>Dr. Michael Chen</h3>
+            <p class="specialty">Neurologist</p>
+            <p class="experience">12 years experience</p>
+            <div class="tags">
+                <span>Stroke Care</span>
+                <span>Epilepsy Treatment</span>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="image/pediatrician doctor.jpg" alt="Dr. Emily Rodriguez">
+            <h3>Dr. Emily Rodriguez</h3>
+            <p class="specialty">Pediatrician</p>
+            <p class="experience">10 years experience</p>
+            <div class="tags">
+                <span>Child Development</span>
+                <span>Immunizations</span>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="image/Orthopedic Surgeon doctor.jpg" alt="Dr. David Wilson">
+            <h3>Dr. David Wilson</h3>
+            <p class="specialty">Orthopedic Surgeon</p>
+            <p class="experience">18 years experience</p>
+            <div class="tags">
+                <span>Joint Replacement</span>
+                <span>Sports Medicine</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+   <section class="contact-section">
+  <div class="contact-info">
+    <h2>Contact Information</h2>
+    <ul>
+      <li><span class="icon">📍</span><strong>Address</strong><br>123 Wellness Street<br>Health District, WL 12345</li>
+      <li><span class="icon">📞</span><strong>Phone</strong><br>(555) 123‑4567</li>
+      <li><span class="icon">✉️</span><strong>Email</strong><br>hello@hefin.com</li>
+      <li><span class="icon">⏰</span><strong>Business Hours</strong><br>Mon – Fri: 9 AM – 6 PM<br>Sat: 10 AM – 4 PM</li>
+    </ul>
+  </div>
+
+  <div class="contact-form">
+    <h2>Get In Touch</h2>
+    <p>Have questions about your health or financial journey? We're here to help you succeed.</p>
+    <form id="contactForm">
+      <div class="row">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" id="firstName" required>
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" id="lastName" required>
+        </div>
       </div>
-      <div class="form-group">
-        <input type="email" id="email" placeholder="Your Email" required>
-        <span class="error" id="emailError"></span>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="email" required>
       </div>
-      <div class="form-group">
-        <input type="text" id="subject" placeholder="Subject" required>
-        <span class="error" id="subjectError"></span>
+      <div class="field">
+        <label>Subject</label>
+        <select id="subject" required>
+          <option value="">Select a topic</option>
+          <option>General</option><option>Support</option><option>Feedback</option>
+        </select>
       </div>
-      <div class="form-group">
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <span class="error" id="messageError"></span>
+      <div class="field">
+        <label>Message</label>
+        <textarea id="message" rows="5" required></textarea>
       </div>
       <button type="submit">Send Message</button>
     </form>
   </div>
 </section>
-<footer class="footer">
-  <div class="footer-top">
-    <!-- About -->
+    <!-- Footer -->
+    <footer class="footer">
+  <div class="footer-container">
     <div class="footer-about">
-      <img src="image/logo.png" alt="HEFIN Logo" class="footer-logo">
-      <p>Providing exceptional healthcare services with compassion and expertise since 2008.</p>
+      <h2>HEFIN</h2>
+      <p>Empowering your journey to health and financial wellness through expert guidance and proven strategies.</p>
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -277,79 +353,42 @@
       </div>
     </div>
 
-    <!-- Quick Links -->
     <div class="footer-links">
-      <h4>Quick Links</h4>
+      <h3>Health & Wellness</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Doctors</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Nutrition Guides</a></li>
+        <li><a href="#">Fitness Plans</a></li>
+        <li><a href="#">Mental Health</a></li>
+        <li><a href="#">Health Tracking</a></li>
       </ul>
     </div>
 
-    <!-- Services -->
-    <div class="footer-services">
-      <h4>Services</h4>
+    <div class="footer-links">
+      <h3>Financial Wellness</h3>
       <ul>
-        <li><a href="#">Cardiology</a></li>
-        <li><a href="#">Neurology</a></li>
-        <li><a href="#">Orthopedics</a></li>
-        <li><a href="#">Pediatrics</a></li>
-        <li><a href="#">Emergency Care</a></li>
+        <li><a href="#">Budget Planning</a></li>
+        <li><a href="#">Investment Guide</a></li>
+        <li><a href="#">Retirement Planning</a></li>
+        <li><a href="#">Financial Tools</a></li>
       </ul>
     </div>
 
-    <!-- Contact Info -->
-    <div class="footer-contact">
-      <h4>Contact Info</h4>
-      <p>123 Health Street</p>
-      <p>Medical City, MC 12345</p>
-      <p>(555) 123-4567</p>
-      <p>info@hefin.com</p>
+    <div class="footer-links">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
     </div>
   </div>
-
-  <hr>
-
   <div class="footer-bottom">
-    <p>© 2025 HEFIN. All rights reserved.</p>
-    <p>Made with <span class="heart">❤</span> for better health</p>
+    <p>© 2024 HEFIN. All rights reserved. Built with care for your health and financial wellness.</p>
   </div>
 </footer>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll('.slider-container .slide');
-    const dots = document.querySelectorAll('.dot');
-    let current = 0;
-    let timer;
 
-    function showSlide(index) {
-      slides.forEach((s, i) => {
-        s.classList.toggle('active', i === index);
-        dots[i].classList.toggle('active', i === index);
-      });
-    }
-
-    function goToSlide(n) {
-      clearInterval(timer);
-      current = n;
-      showSlide(current);
-      timer = setInterval(nextSlide, 4000);
-    }
-
-    function nextSlide() {
-      current = (current + 1) % slides.length;
-      showSlide(current);
-    }
-
-    showSlide(current);
-    timer = setInterval(nextSlide, 4000);
-  });
-</script>
-
-
+<!-- FontAwesome -->
 
 
 </body>
